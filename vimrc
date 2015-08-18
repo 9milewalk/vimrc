@@ -3,7 +3,7 @@
 " An example for a Japanese version vimrc file.
 " 日本語版のデフォルト設定ファイル(vimrc) - Vim7用試作
 "
-" Last Change: 05-Aug-2012.
+" Last Change: 18-Aug-2015.
 " Maintainer:  MURAOKA Taro <koron.kaoriya@gmail.com>
 "
 " 解説:
@@ -135,7 +135,8 @@ set smartcase
 " 編集に関する設定:
 "
 " タブの画面上での幅
-set tabstop=8
+"set tabstop=8
+set tabstop=4
 " タブをスペースに展開しない (expandtab:展開する)
 set noexpandtab
 " 自動的にインデントする (noautoindent:インデントしない)
@@ -150,6 +151,8 @@ set showmatch
 set wildmenu
 " テキスト挿入中の自動折り返しを日本語に対応させる
 set formatoptions+=mM
+"行番号表示
+set number
 
 "---------------------------------------------------------------------------
 " GUI固有ではない画面表示の設定:
@@ -246,3 +249,19 @@ endif
 let $PATH = simplify($VIM . '/../../MacOS') . ':' . $PATH
 set migemodict=$VIMRUNTIME/dict/migemo-dict
 set migemo
+
+
+"---------------------------------------------------------------------------
+"
+" My Settings
+"
+
+" バックアップ設定
+set directory=>/Applications/MacVim.app/Contents/Resources/vim/backup
+set backupdir=>/Applications/MacVim.app/Contents/Resources/vim/backup
+
+" 音設定
+set vb t_vb=
+
+" インクリメンタル検索
+set incsearch

@@ -173,6 +173,7 @@ endif
 "---------------------------------------------------------------------------
 " カラー設定:
 "colorscheme morning
+colorscheme mycolor 
 
 "---------------------------------------------------------------------------
 " フォント設定:
@@ -188,9 +189,12 @@ if has('win32')
     set ambiwidth=auto
   endif
 elseif has('gui_macvim')
-  set guifont=Osaka-Mono:h14
+  "set guifont=Osaka-Mono:h14
+  "set guifont=Consolas:h8:cSHIFTJIS
+  "set guifont=Osaka－等幅:h8
 elseif has('mac')
-  set guifont=Osaka－等幅:h14
+  "set guifont=Osaka－等幅:h14
+  set guifont=Osaka－等幅:h12
 elseif has('xfontset')
   " UNIX用 (xfontsetを使用)
   set guifontset=a14,r14,k14
@@ -200,9 +204,11 @@ endif
 " ウインドウに関する設定:
 "
 " ウインドウの幅
-set columns=80
+"set columns=80
+set columns=230
 " ウインドウの高さ
-set lines=25
+"set lines=25
+set lines=100
 " コマンドラインの高さ(GUI使用時)
 set cmdheight=2
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
