@@ -210,7 +210,8 @@ set columns=230
 "set lines=25
 set lines=100
 " コマンドラインの高さ(GUI使用時)
-set cmdheight=2
+"set cmdheight=2
+set cmdheight=1
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
 "colorscheme evening " (GUI使用時)
 
