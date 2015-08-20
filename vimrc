@@ -3,7 +3,7 @@
 " An example for a Japanese version vimrc file.
 " 日本語版のデフォルト設定ファイル(vimrc) - Vim7用試作
 "
-" Last Change: 18-Aug-2015.
+" Last Change: 19-Aug-2015.
 " Maintainer:  MURAOKA Taro <koron.kaoriya@gmail.com>
 "
 " 解説:
@@ -165,7 +165,8 @@ set nolist
 " どの文字でタブや改行を表示するかを設定
 "set listchars=tab:>-,extends:<,trail:-,eol:<
 " 長い行を折り返して表示 (nowrap:折り返さない)
-set wrap
+"set wrap
+set nowrap
 " 常にステータス行を表示 (詳細は:he laststatus)
 set laststatus=2
 " コマンドラインの高さ (Windows用gvim使用時はgvimrcを編集すること)
